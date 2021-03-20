@@ -2,8 +2,10 @@ package com.elite.agents.server;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
+@ComponentScan(basePackages = "com.elite.agents.server.configuration")
 public class ServerApplication {
 
 	public static void main(String[] args) {
