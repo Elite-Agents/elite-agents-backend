@@ -21,4 +21,15 @@ public class HelloController {
 
         return response;
     }
+
+    @GetMapping("video")
+    public Map<String, String> getVideo() {
+        Map<String, String> response = new HashMap<>();
+
+        response.put("welcome", "StartHack21");
+        response.put("team", "EliteAgents");
+        response.put("case", "MercedesBenz");
+
+        return response;
+    }
 }
