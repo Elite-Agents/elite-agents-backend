@@ -5,7 +5,7 @@ import org.springframework.data.mongodb.config.EnableMongoAuditing;
 import org.springframework.data.mongodb.repository.config.EnableMongoRepositories;
 
 @Configuration
-// TODO @EnableMongoRepositories(basePackages = "com.elite.agents.server.repository")
-// TODO @EnableMongoAuditing
+@EnableMongoRepositories(basePackages = "com.elite.agents.server.repository")
+@EnableMongoAuditing
 public class MongoConfiguration {
 }
